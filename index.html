@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="../tp_morpion/morpion.js " defer></script>
+    <title>Morpion</title>
+</head>
+<body>
+    <center>
+        <div class="titre">
+                <h1 id="montitre">Morpion 1 vs 1</h1>
+                <input type="radio" name="combat" id="1v1" checked> 1v1
+                <input type="radio" name="combat" id="computer"> Ordi 
+        </div>
+    <br>
+    <br>
+    <button id="btn">Rejouer</button>
+    
+    <div class="firstPlayer"></div> 
+    <div id="nbpartie">
+        <h1>Nombre de Parties</h1>
+        <input type="radio" name="ndp" id="un" checked> 1
+        <input type="radio" name="ndp" id="deux"> 2
+        <input type="radio" name="ndp" id="trois"> 3
+        <input type="radio" name="ndp" id="quatre"> 4
+        <input type="radio" name="ndp" id="cinq"> 5
+    </div>
+    <br>
+    <button id="valider">valider</button>
+    <button id="suivant">Suivant</button>
+    <br>
+    <br>
+</center>
+    <div class="global">
+        <div class="jeu">
+            <table id="center">
+                <tr>
+                    <td class="carre" id="z0" onclick="partie('z0')" ></td>
+                    <td class="carre" id="z1" onclick="partie('z1')"></td>
+                    <td class="carre" id="z2" onclick="partie('z2')"></td>
+                </tr>
+                <tr>
+                    <td class="carre" id="z3" onclick="partie('z3')"></td>
+                    <td class="carre" id="z4" onclick="partie('z4')"></td>
+                    <td class="carre" id="z5" onclick="partie('z5')"></td>
+                </tr>
+                <tr>
+                    <td class="carre" id="z6" onclick="partie('z6')"></td>
+                    <td class="carre" id="z7" onclick="partie('z7')"></td>
+                    <td class="carre" id="z8" onclick="partie('z8')"></td>
+                </tr>
+            </table>
+            <div class="nbrestant"></div>
+        </div>    
+
+        <div id="info">
+            <center
+            ><h1>Informations</h1>
+            <div id="StatutJeu"></div>
+            </center>          
+            <p id="nbPartieP">Nombre de partis prévus: 1/1 </p>
+            <p id="cpsRestant">Nombre de coups restant: 9/9 </p>
+            <p id="partieJ">Nombre de partis jouer: </p>
+            <p id="partieG"> </p>
+            <p id="pl1">Victoires Player 1: </p>
+            <p id="pl2">Victoires Player 2: </p>
+        </div>
+    </div>   
+</body>
+</html>

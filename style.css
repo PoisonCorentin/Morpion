@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    margin:0%;
+    padding: 0;
+}
+
+#info{
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+#nbpartie{
+    background-color: bisque;
+    border-radius: 10px;
+    width: 60%;
+    height: auto;
+}
+
+.titre{
+    background-color: rgba(220, 20, 60, 0.39);
+    border-radius: 10px;
+    width: 60%;
+}
+
+.firstPlayer{
+    font-size: xx-large;
+    margin-top: 10px;
+}
+.global
+{
+    width:100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.global .jeu
+{
+    position:relative;
+}
+.global #info
+{
+    position:relative;
+
+}
+
+.morpion{
+    display: inline-block;
+    background-color: grey;
+
+}
+
+.morpion div {
+    margin: 0;
+  }
+  
+.morpion button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+}
+
+.carre {
+    width: 100px;
+    height: 100px;
+    
+}
+
+#suivant{
+    display: none;
+}
+  
+#z0 {
+    border-right: solid 5px rgba(0, 0, 0, 0.445);
+    border-bottom: solid 5px rgba(0, 0, 0, 0.445);
+}
+
+#z2 {
+    border-bottom: solid 5px rgba(0, 0, 0, 0.445);
+    border-left: solid 5px rgba(0, 0, 0, 0.445);
+    background-position: right; /* ligne à supprimer */
+}
+
+#z4 {
+    border: solid 5px rgba(0, 0, 0, 0.445);
+
+}
+
+#z6 {
+    border-right: solid 5px rgba(0, 0, 0, 0.445);
+    border-top: solid 5px rgba(0, 0, 0, 0.445);
+}
+
+#z8 {
+    border-left: solid 5px rgba(0, 0, 0, 0.445);
+    border-top: solid 5px rgba(0, 0, 0, 0.445);
+}
+
+#center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#StatutJeu{
+    margin-top: 20px;
+}
